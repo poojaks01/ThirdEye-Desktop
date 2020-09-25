@@ -41,7 +41,97 @@
 .togglebutton{
   display: none;
 }
-@media screen and (max-width:1365px) and (min-width: 1024px){
+@media screen and (max-width:64rem){
+  .maindiv{
+    display: none;
+    
+  }
+  .SideSubdiv{
+    
+    font-weight:bold;
+     font-size:5vw !important;
+     
+      
+      
+  }
+  .Hthirdeye{
+    background-color:white;
+  
+  }
+  .SideSubdiv .thirdeyeli{
+    padding: 5px 150px 10px 159px !important;
+    
+  }
+  .li{
+    font-size: 28px !important;
+    
+  }
+  .togglebutton{
+    display: block;
+    padding-top:10px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    
+    
+  }
+  .icon{
+    font-size: 20px;
+  }
+  .subpages{
+    float: left !important;
+    margin-left: 30px !important;
+    margin-top: 300px !important;
+
+  
+  }
+
+}
+@media screen and (max-width:48rem){
+  .maindiv{
+    display: none;
+    
+  }
+  .SideSubdiv{
+    
+    font-weight:bold;
+     font-size:5vw !important;
+     
+      
+      
+  }
+  .Hthirdeye{
+    background-color:white;
+  
+  }
+  .SideSubdiv .thirdeyeli{
+    padding: 5px 150px 10px 159px !important;
+    
+  }
+  .li{
+    font-size: 28px !important;
+    
+  }
+  .togglebutton{
+    display: block;
+    padding-top:10px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    
+    
+  }
+  .icon{
+    font-size: 20px;
+  }
+  .subpages{
+    float: left !important;
+    margin-left: 30px !important;
+    margin-top: 300px !important;
+
+  
+  }
+
+}
+@media (max-width: 47.938rem) {
   .maindiv{
     display: none;
     
@@ -145,7 +235,8 @@
 
 }
 
-@media screen and (min-width:320px) and (max-width:480px){
+
+@media screen  and (max-width:48rem){
   .maindiv{
     display: none;
  

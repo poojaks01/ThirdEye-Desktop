@@ -1,0 +1,261 @@
+.app-header{
+  overflow-x: hidden;
+  border-bottom: 2px solid lightgrey;
+  padding: 10px;
+  font-size: 18px;
+  box-shadow: gray;
+  margin-left: -8px;
+  margin-right: -5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  
+}
+.head{
+  overflow-x: hidden;
+  font-weight: bold;
+  font-size: 35px;
+  
+ 
+}
+.side-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.maindiv{
+  width:20%;
+ background:#ff4040;
+ height:100vh;
+ position:fixed;
+ top: 0;
+
+}
+.subdiv{
+  font-weight:bold;
+   font-size:30px;
+    background-color:white;
+    
+}
+.togglebutton{
+  display: none;
+}
+@media screen and (max-width:1365px) and (min-width: 1024px){
+  .maindiv{
+    display: none;
+    
+  }
+  .SideSubdiv{
+    
+    font-weight:bold;
+     font-size:5vw !important;
+     
+      
+      
+  }
+  .Hthirdeye{
+    background-color:white;
+  
+  }
+  .SideSubdiv .thirdeyeli{
+    padding: 5px 150px 10px 159px !important;
+    
+  }
+  .li{
+    font-size: 28px !important;
+    
+  }
+  .togglebutton{
+    display: block;
+    padding-top:10px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    
+    
+  }
+  .icon{
+    font-size: 20px;
+  }
+  .subpages{
+    float: left !important;
+    margin-left: 30px !important;
+    margin-top: 300px !important;
+
+  
+  }
+
+}
+
+@media screen and (max-width:900px) and (min-width: 768px){
+  .maindiv{
+   display: none;
+
+  }
+  .subdiv{
+    display: none;
+  }
+ .mainSidediv{
+  position:fixed;
+  top: 50px !important;
+  font-size: 3.7vw;
+    
+ 
+
+  }
+  .SideSubdiv{
+    
+    font-weight:700;
+     font-size:28px !important;
+     
+      color: black;
+      z-index: 50 !important;
+      margin-top: 20px !important;
+     
+     
+  }
+  .SideSubdiv .thirdeyeli{
+    padding: 5px 150px 10px 125px !important;
+    
+  }
+
+  .dashboard{
+    margin-top: 50px !important;
+  }
+
+  .li{
+    font-size: 20px !important;
+    
+  }
+  .togglebutton{
+    display: block;
+    padding-top:10px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    
+    
+  }
+  .subpages{
+    float: left !important;
+    margin-left: 30px !important;
+    margin-top: 300px !important;
+
+  
+  }
+
+}
+
+@media screen and (min-width:320px) and (max-width:480px){
+  .maindiv{
+    display: none;
+ 
+   }
+   .subdiv{
+     display: none;
+   }
+  
+   .SideSubdiv{
+     display: none !important;
+     
+    
+   }
+   .dashboard{
+    margin-top: -50px !important;
+    background-color: transparent !important;
+   
+   }
+   
+   .li{
+     font-size: 11px !important;
+     width:149px !important;
+     
+     
+     
+   }
+   .togglebutton{
+     display: block;
+     padding-top:10px;
+     padding-bottom: 15px;
+     padding-right: 20px;
+     
+     
+   }
+   .subpages{
+    float: left !important;
+    margin-left: 30px !important;
+    margin-top: 100px !important;
+   
+  
+  }
+  .subpages .h1{
+    font-size: 15px !important;
+    font-weight: 700 !important;
+
+
+  }
+  table {
+    display: flex;
+    justify-content: center;
+    border: 1px solid gray;
+   
+    
+   
+  }
+  td {
+    
+    width: 5px;
+    display: inline;
+}
+.stock-container {
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  margin-left: 100px !important;
+  
+  
+}
+.header{
+  
+  font-size: 15px !important;
+  margin-top:20px !important;
+  margin-right: -90px !important;
+  
+  
+}
+
+
+}
+
+
+
+
+.subpage {
+  text-align: center;
+}
+
+.stock-container {
+  padding-left: 3em;
+  padding-right: 3em;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  
+  
+}
+
+
+table {
+  display: flex;
+  justify-content: center;
+  border: 1px solid gray;
+  margin-left: -300px;
+ 
+}
+td {
+  border: 1px solid gray;
+  width: 30em;
+}
+.header{
+  margin-top: -20px;
+  margin-left: -300px;
+}

@@ -55,7 +55,7 @@ function Navigation(){
                    <animated.div
                     key={key} 
                     style={props}
-                    style={{position:"fixed", background:"#ff4040", top:"95px", right:"0", width:"50%", height:"100%", zIndex:"50", boxShadow:"2px 2px lightgrey", padding:"5px"}}
+                    style={{position:"fixed", background:"#ff4040", top:"92px", right:"0", width:"50%", height:"100%", zIndex:"50", boxShadow:"2px 2px lightgrey", padding:"5px"}}
                     >
                        
                        <NavigationSideMenu style={{width:"50%"}}

@@ -13,6 +13,7 @@
   
 }
 .head{
+  display: none;
   overflow-x: hidden;
   font-weight: bold;
   font-size: 35px;
@@ -36,15 +37,29 @@
   font-weight:bold;
    font-size:30px;
     background-color:white;
+  
     
 }
 .togglebutton{
   display: none;
 }
+
 @media screen and (max-width:64rem){
   .maindiv{
     display: none;
     
+  }
+  .mainSidediv{
+    margin-top: 40px !important;
+
+  }
+  .logout #li{
+    font-size: 30px !important;
+    margin-left: -10px !important;
+  
+  }
+  .logout .icon{
+    font-size: 30px !important;
   }
   .SideSubdiv{
     
@@ -59,6 +74,7 @@
   
   }
   .SideSubdiv .thirdeyeli{
+    font-size: 39px;
     padding: 5px 150px 10px 159px !important;
     
   }
@@ -83,6 +99,18 @@
     margin-top: 300px !important;
 
   
+  }
+  .head{
+    display: block;
+    overflow-x: hidden;
+    font-weight: bold;
+    font-size: 55px;
+    margin-left: 10px !important;
+    
+   
+  }
+  .side-bar{
+    display: none !important;
   }
 
 }
@@ -91,6 +119,10 @@
     display: none;
     
   }
+  .logout #li{
+    font-size: 15px !important;
+    margin-left: -20px !important;
+  }
   .SideSubdiv{
     
     font-weight:bold;
@@ -127,6 +159,19 @@
     margin-left: 30px !important;
     margin-top: 300px !important;
 
+  
+  }
+  .head{
+    display: block;
+    overflow-x: hidden;
+    font-weight: bold;
+    font-size: 35px;
+    margin-left: 10px !important;
+    
+   
+  }
+  .side-bar{
+    display: none;
   
   }
 
@@ -144,6 +189,7 @@
       
       
   }
+ 
   .Hthirdeye{
     background-color:white;
   
@@ -174,6 +220,19 @@
 
   
   }
+  .head{
+    display: block;
+    overflow-x: hidden;
+    font-weight: bold;
+    font-size: 35px;
+    
+   
+  }
+  .side-bar{
+    display: none;
+  
+  }
+
 
 }
 
@@ -186,13 +245,32 @@
     display: none;
   }
  .mainSidediv{
-  position:fixed;
-  top: 50px !important;
-  font-size: 3.7vw;
-    
+  margin-top: 20px !important;
  
 
   }
+  .menu .li{
+    font-size: 20px !important;
+    width:300px !important;
+  }
+  .logout{
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    
+  }
+  .logout #li{
+    margin-top: 20px !important;
+    margin-bottom: 30px !important;
+    font-size: 25px !important;
+    margin-left: -20px !important;
+   
+
+  }
+  .logout .icon{
+    font-size: 30px !important ;
+
+  }
+  
   .SideSubdiv{
     
     font-weight:700;
@@ -210,7 +288,13 @@
   }
 
   .dashboard{
-    margin-top: 50px !important;
+    margin-top: -10px !important;
+  }
+  .dashboard .li{
+   
+    font-size: 20px !important;
+    width:300px !important;
+
   }
 
   .li{
@@ -232,6 +316,19 @@
 
   
   }
+  .head{
+    display: block;
+    overflow-x: hidden;
+    font-weight: bold;
+    font-size: 38px;
+    
+   
+  }
+  .side-bar{
+    display: none;
+  
+  }
+  
 
 }
 
@@ -250,8 +347,25 @@
      
     
    }
+   .mainSidediv{
+     margin-top: -20px !important;
+   }
+   .logout .li{
+    font-size: 15px !important;
+    margin-top: -30px !important;
+   margin-left: -20px !important;
+    
+    
+
+  }
+  .logout .icon{
+    font-size: 20px !important ;
+  }
+ 
+  
+  
    .dashboard{
-    margin-top: -50px !important;
+    margin-top: 20px !important;
     background-color: transparent !important;
    
    }
@@ -259,7 +373,7 @@
    .li{
      font-size: 11px !important;
      width:149px !important;
-     
+    
      
      
    }
@@ -292,11 +406,10 @@
     
    
   }
-  td {
-    
-    width: 5px;
-    display: inline;
-}
+  td{
+    margin-left: 10px !important;
+  }
+
 .stock-container {
   padding-left: 1em;
   padding-right: 1em;
@@ -314,6 +427,19 @@
   
   
 }
+.head{
+  display: block;
+  overflow-x: hidden;
+  font-weight: bold;
+  font-size: 28px;
+  
+ 
+}
+.side-bar{
+  display: none;
+
+}
+
 
 
 }
@@ -348,5 +474,5 @@ td {
 }
 .header{
   margin-top: -20px;
-  margin-left: -300px;
+  margin-left: -250px;
 }

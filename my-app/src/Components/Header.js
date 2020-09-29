@@ -9,7 +9,9 @@ function Header(){
     return (
         <header className="app-header">
            <span className="head">
-             
+           
+                ThirdEye
+                       
            </span>
            <div className="side-bar">
                 <Link to="/logout" className="li" style={{color:"blue", fontWeight:"500", textDecoration:'none', marginRight:'10px'}}>  

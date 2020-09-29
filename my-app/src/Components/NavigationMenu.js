@@ -14,9 +14,9 @@ function NavigationMenu(props){
     return(
             <div className='maindiv'>
 
-                       <div className="subdiv" >
+                       <div className="subdiv" style= {{fontSize:"36px", backgroundColor:"white", marginRight:'50px', marginTop:"-38px", marginLeft:'1px', marginRight:"3px"}} >
                             <ul>
-                              <li style={{listStyle:"none", position:'fixed', top:'0',left:'0', backgroundColor:'white', paddingBottom:'10px',paddingLeft:'60px', paddingRight:'89px',paddingTop:'5px'} }>ThirdEye</li>
+                              <li style={{listStyle:"none"}} >ThirdEye</li>
                            </ul>
                        </div>
                        <div style={{ fontSize:"15px", backgroundColor:'rgba(0,0,0,0.2)', marginTop:'80px', marginBottom:'-10px', marginLeft:'10px', marginRight:'50px', borderRadius:'50px'}}>

@@ -9,17 +9,27 @@ import { faUsersCog} from '@fortawesome/free-solid-svg-icons'
 import { faTasks} from '@fortawesome/free-solid-svg-icons'
 import { faFileAlt} from '@fortawesome/free-solid-svg-icons'
 import { faSubscript} from '@fortawesome/free-solid-svg-icons'
+import { faBell} from '@fortawesome/free-solid-svg-icons'
 
 function NavigationSideMenu(props){
     return(
-            <div className='mainSidediv' style={{marginTop:'80px'}}>
+            <div className='mainSidediv' style={{marginTop:'90px'}}>
+                   <div  className="logout" style={{ fontSize:"25px", marginLeft:'10px', marginRight:'50px'}} >
+                        <ul style={{marginLeft:'20px', marginRight:'-50px'}} >
+                          <li style={{listStyle:"none" } }>
+                          <Link to="/logout" id="li" style={{color:"white",  textDecoration:'none'}}>  
+                                 <FontAwesomeIcon className="icon"
+                                      icon={faBell}
+                                     />&nbsp;
+                                      
+                                   Log Out
+                          </Link>
+                          </li>
+                        </ul>
+                    </div>
 
-                       <div className="SideSubdiv" >
-                            <ul >
-                              <li className="thirdeyeli" style={{listStyle:"none", position:'fixed', top:'71px', right:'0', backgroundColor:'white', paddingBottom:'10px',paddingLeft:'190px', paddingRight:'89px',paddingTop:'5px', marginBottom:'50px', marginTop:'25px', textAlign:'center'} }>ThirdEye</li>
-                           </ul>
-                       </div>
-                       <div className="dashboard" style={{ fontSize:"15px", backgroundColor:'rgba(0,0,0,0.2)', marginTop:'130px', marginBottom:'-10px', marginLeft:'10px', marginRight:'50px', borderRadius:'50px'}}>
+                       
+                       <div className="dashboard" style={{ fontSize:"15px", backgroundColor:'rgba(0,0,0,0.2)', marginTop:'50px', marginBottom:'-10px', marginLeft:'10px', marginRight:'50px', borderRadius:'50px'}}>
                             <ul style={{marginLeft:'20px', marginRight:'-20px'}}>
                               <li style={{listStyle:"none" } }>
                                     <Link to="/" className="li" style={{color:"white", fontWeight:"500",position:'relative', left:"-40px", fontSize:"15px", padding:"15px" , display:"block", textDecoration:'none',  paddingBottom:'20px'}}
@@ -47,7 +57,7 @@ function NavigationSideMenu(props){
                            </li>
 
                           <li  style={{ listStyle:"none"}}>
-                             <Link to="/conference" className="li" style={{color:"white", fontWeight:"500",position:'relative', left:"-40px", fontSize:"15px", padding:"10px" , display:"block", textDecoration:'none', paddingBottom:'20px'}}
+                             <Link to="/conference" className="li" style={{color:"white", fontWeight:"500",position:'relative', left:"-40px", fontSize:"20px", padding:"10px" , display:"block", textDecoration:'none', paddingBottom:'20px'}}
                                onClick={props.closeMenu}
                                   >
                                  <FontAwesomeIcon className="icon"

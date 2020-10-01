@@ -15,6 +15,7 @@ import Team from './views/Team'
 import Task from './views/Task'
 import Files from './views/Files'
 import LogOut from './views/logout'
+import Subscription from './views/Subscription'
 
 
 function App() {
@@ -46,6 +47,9 @@ function App() {
                      </Route>
                      <Route path="/files">
                         <Files />
+                     </Route>
+                     <Route path="/subscription">
+                        <Subscription />
                      </Route>
                      <Route path="/logout">
                         <LogOut />

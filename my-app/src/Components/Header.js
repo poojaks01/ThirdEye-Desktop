@@ -8,20 +8,24 @@ import { faBell} from '@fortawesome/free-solid-svg-icons'
 function Header(){
     return (
         <header className="app-header">
-           <span className="head">
+           <span style={{position:'absolute', left:'0', fontSize:'4vw'}} className="head">
            
-                ThirdEye
-                       
-           </span>
-           <div className="side-bar">
-                <Link to="/logout" className="li" style={{color:"blue", fontWeight:"500", textDecoration:'none', marginRight:'10px'}}>  
-                      <FontAwesomeIcon style={{fontSize:'20px'}}
+           ThirdEye
+                  
+      </span>
+           
+          
+                <div className="side-bar" >
+                    <Link to="/logout" className="li" style={{color:"blue", fontWeight:"500", textDecoration:'none', marginRight:'50px'}}>  
+                        <FontAwesomeIcon style={{fontSize:'20px'}}
                            icon={faBell}
                         />&nbsp;
                                       
                         Log Out
                     </Link>
-            </div>
+                </div>
+        
+           
             <Navigation />
         </header>
       

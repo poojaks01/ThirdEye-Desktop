@@ -1,6 +1,6 @@
 import React from 'react'
 import '../App.css'
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTachometerAlt} from '@fortawesome/free-solid-svg-icons'
 import { faVideo } from '@fortawesome/free-solid-svg-icons'
@@ -17,22 +17,24 @@ function NavigationSideMenu(props){
                    <div  className="logout" style={{ fontSize:"25px", marginLeft:'10px', marginRight:'50px'}} >
                         <ul style={{marginLeft:'20px', marginRight:'-50px'}} >
                           <li style={{listStyle:"none" } }>
-                          <Link to="/logout" id="li" style={{color:"white",  textDecoration:'none'}}>  
+                          <NavLink to="/logout" id="li" activeClassName="active" style={{color:"white",  textDecoration:'none'}}
+                               onClick={props.closeMenu}
+                              >  
                                  <FontAwesomeIcon className="icon"
                                       icon={faBell}
                                      />&nbsp;
                                       
                                    Log Out
-                          </Link>
+                          </NavLink>
                           </li>
                         </ul>
                     </div>
 
                        
-                       <div className="dashboard" style={{ fontSize:"15px", backgroundColor:'rgba(0,0,0,0.2)', marginTop:'50px', marginBottom:'-10px', marginLeft:'10px', marginRight:'50px', borderRadius:'50px'}}>
+                       <div className="dashboard" style={{ fontSize:"15px", marginTop:'50px', marginBottom:'-10px', marginLeft:'10px', marginRight:'50px', borderRadius:'50px'}}>
                             <ul style={{marginLeft:'20px', marginRight:'-20px'}}>
                               <li style={{listStyle:"none" } }>
-                                    <Link to="/" className="li" style={{color:"white", fontWeight:"500",position:'relative', left:"-40px", fontSize:"15px", padding:"15px" , display:"block", textDecoration:'none',  paddingBottom:'20px'}}
+                                    <NavLink to="/" className="li"  exact activeClassName="active" style={{color:"white", fontWeight:"500",position:'relative', left:"-40px", fontSize:"15px" , display:"block", textDecoration:'none'}}
                                            onClick={props.closeMenu}
                                     >
                                         <FontAwesomeIcon className="icon"
@@ -40,74 +42,74 @@ function NavigationSideMenu(props){
                                            />&nbsp;
                                       
                                        DASHBOARD
-                                     </Link>
+                                     </NavLink>
                                 </li>
                            </ul>
                        </div>
                        <ul className="menu" style={{marginLeft:'30px', marginTop:'20px'}}>
-                           <li style={{ listStyle:"none"}}>
-                             <Link to="/remote" className="li" style={{color:"white", fontWeight:"500",position:'relative', left:"-40px", fontSize:"15px", padding:"10px" , display:"block", textDecoration:'none', paddingBottom:'20px'}}
+                           <li id="remote" style={{ listStyle:"none"}}>
+                             <NavLink to="/remote"  className="li" activeClassName="active" style={{color:"white", fontWeight:"500",position:'relative', left:"-40px", fontSize:"15px", display:"block", textDecoration:'none', paddingBottom:'20px'}}
                                onClick={props.closeMenu}
                                     >
                                  <FontAwesomeIcon className="icon"
                                             icon={faVideo}
                                            />&nbsp;
                                       REMOTE ASSISTANCE
-                             </Link>
+                             </NavLink>
                            </li>
 
-                          <li  style={{ listStyle:"none"}}>
-                             <Link to="/conference" className="li" style={{color:"white", fontWeight:"500",position:'relative', left:"-40px", fontSize:"20px", padding:"10px" , display:"block", textDecoration:'none', paddingBottom:'20px'}}
+                          <li id="conference"  style={{ listStyle:"none"}}>
+                             <NavLink to="/conference" className="li" activeClassName="active" style={{color:"white", fontWeight:"500",position:'relative', left:"-40px", fontSize:"20px", padding:"10px" , display:"block", textDecoration:'none', paddingBottom:'20px'}}
                                onClick={props.closeMenu}
                                   >
                                  <FontAwesomeIcon className="icon"
                                             icon={faPhoneAlt}
                                            />  &nbsp;
                                    CONFERENCE
-                             </Link>
+                             </NavLink>
                           </li>
-                          <li style={{ listStyle:"none"}}>
-                             <Link to="/team" className="li" style={{color:"white", fontWeight:"500",position:'relative', left:"-40px", fontSize:"15px", padding:"10px" , display:"block", textDecoration:'none',  paddingBottom:'20px'}}
+                          <li id="team" style={{ listStyle:"none"}}>
+                             <NavLink to="/team" className="li" activeClassName="active" style={{color:"white", fontWeight:"500",position:'relative', left:"-40px", fontSize:"15px", padding:"10px" , display:"block", textDecoration:'none',  paddingBottom:'20px'}}
                                onClick={props.closeMenu}
                                  >
                                   <FontAwesomeIcon className="icon"
                                             icon={faUsersCog}
                                            />&nbsp;
                                     TEAM
-                             </Link>
+                             </NavLink>
                           </li>
-                          <li  style={{ listStyle:"none"}}>
-                             <Link to="/task" className="li" style={{color:"white", fontWeight:"500",position:'relative', left:"-40px", fontSize:"15px", padding:"10px" , display:"block", textDecoration:'none',  paddingBottom:'20px'}}
+                          <li id="task"  style={{ listStyle:"none"}}>
+                             <NavLink to="/task" className="li" activeClassName="active" style={{color:"white", fontWeight:"500",position:'relative', left:"-40px", fontSize:"15px", padding:"10px" , display:"block", textDecoration:'none',  paddingBottom:'20px'}}
                                onClick={props.closeMenu}
                                    >
                                         <FontAwesomeIcon className="icon"
                                             icon={faTasks}
                                            />&nbsp;
                                 TASK
-                             </Link>
+                             </NavLink>
                           </li>
 
 
-                          <li style={{ listStyle:"none"}}>
-                             <Link to="/files" className="li" style={{color:"white", fontWeight:"500",position:'relative', left:"-40px", fontSize:"15px", padding:"10px" , display:"block", textDecoration:'none',  paddingBottom:'20px'}}
+                          <li id="files" style={{ listStyle:"none"}}>
+                             <NavLink to="/files" className="li" activeClassName="active" style={{color:"white", fontWeight:"500",position:'relative', left:"-40px", fontSize:"15px", padding:"10px" , display:"block", textDecoration:'none',  paddingBottom:'20px'}}
                                onClick={props.closeMenu}
                                 >
                                      <FontAwesomeIcon className="icon"
                                             icon={faFileAlt}
                                            />&nbsp;
                                  FILES
-                             </Link>
+                             </NavLink>
                           </li>
 
-                          <li  style={{ listStyle:"none"}}>
-                             <Link to="/files" className="li" style={{color:"white", fontWeight:"500",position:'relative', left:"-40px", fontSize:"15px", padding:"10px" , display:"block", textDecoration:'none',  paddingBottom:'20px'}}
+                          <li  id="subscription" style={{ listStyle:"none"}}>
+                             <NavLink to="/subscription" className="li" activeClassName="active" style={{color:"white", fontWeight:"500",position:'relative', left:"-40px", fontSize:"15px", padding:"10px" , display:"block", textDecoration:'none',  paddingBottom:'20px'}}
                                onClick={props.closeMenu}
                                    >
                                      <FontAwesomeIcon className="icon"
                                             icon={faSubscript}
                                            />&nbsp;
                                            SUBSCRIPTION
-                             </Link>
+                             </NavLink>
                           </li>
 
 

@@ -20,17 +20,44 @@
   
  
 }
-.side-bar{
+.navbar li>.active {
+  background-color:rgba(0,0,0,0.2);
+  border-radius:50px;
+  
+  
+  
+  
+}
+.mainSidediv li>.active {
+  background-color:rgba(0,0,0,0.2);
+  border-radius:50px;
+
+}
+
+
+.app-header{
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
+
+
+ 
 .maindiv{
-  width:20%;
- background:#ff4040;
+ /* width:20%;
+
  height:100vh;
  position:fixed;
- top: 0;
+ top: 0;*/
+ height: 100%;
+  width: 280px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #ff4040;
+  overflow-x: hidden;
+  
 
 }
 .subdiv{
@@ -44,23 +71,130 @@
   display: none;
 }
 
-@media screen and (max-width:64rem){
+
+
+
+
+@media only screen and (max-width:64rem){
   .maindiv{
     display: none;
     
   }
+  
+  
+  .logout .icon{
+    font-size: 35px !important;
+    
+  }
+  .logout #li{
+    
+      font-size: 30px !important;
+    
+    
+    
+    margin-top: 15px !important;
+    padding-left: 25px !important;
+    padding-top: 12px !important;
+    padding-bottom: 18px !important;
+    margin-right: 20px !important;
+    padding-right: 30px !important;
+   margin-bottom: -20px !important;
+   
+    
+  
+    margin-left: -25px !important;
+   
+    
+  }
+  .dashboard .li{
+    font-size: 25px !important;
+    margin-top: -15px !important;
+    padding-left: 18px !important;
+    padding-top: 12px !important;
+    padding-bottom: 15px !important;
+    margin-right: 90px !important;
+    padding-right: 10px !important;
+ 
+    
+  }
+  #remote .li{
+    font-size: 25px !important;
+    padding-left: 18px !important;
+    padding-top: 12px !important;
+    padding-bottom: 15px !important;
+    margin-right: 90px !important;
+    padding-right: -50px !important;
+  
+    width:85% !important;
+
+  }
+  #conference .li{
+    font-size: 25px !important;
+    padding-left: 18px !important;
+    padding-top: 12px !important;
+    padding-bottom: 15px !important;
+    
+   
+   width:70% !important;
+
+  }
+  #subscription .li{
+    font-size: 25px !important;
+    padding-left: 18px !important;
+    padding-top: 12px !important;
+    padding-bottom: 15px !important;
+    
+   
+   width:65% !important;
+   
+
+  }
+  #team .li{
+    font-size: 25px !important;
+    padding-left: 18px !important;
+    padding-top: 12px !important;
+    padding-bottom: 15px !important;
+    
+   
+   width:40% !important;
+
+
+  }
+  #task .li{
+    font-size: 25px !important;
+    padding-left: 18px !important;
+    padding-top: 12px !important;
+    padding-bottom: 15px !important;
+    
+   
+   width:40% !important;
+
+  }
+  #files .li{
+    font-size: 25px !important;
+    padding-left: 18px !important;
+    padding-top: 12px !important;
+    padding-bottom: 15px !important;
+    
+   
+   width:35% !important;
+
+  }
   .mainSidediv{
+    /*height: 100%;
+  width: 280px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;*/
+   
     margin-top: 40px !important;
 
   }
-  .logout #li{
-    font-size: 30px !important;
-    margin-left: -10px !important;
+ 
   
-  }
-  .logout .icon{
-    font-size: 30px !important;
-  }
   .SideSubdiv{
     
     font-weight:bold;
@@ -78,10 +212,7 @@
     padding: 5px 150px 10px 159px !important;
     
   }
-  .li{
-    font-size: 28px !important;
-    
-  }
+  
   .togglebutton{
     display: block;
     padding-top:10px;
@@ -91,7 +222,7 @@
     
   }
   .icon{
-    font-size: 20px;
+    font-size: 30px;
   }
   .subpages{
     float: left !important;
@@ -101,10 +232,11 @@
   
   }
   .head{
-    display: block;
+    display: block !important;
+    
     overflow-x: hidden;
     font-weight: bold;
-    font-size: 55px;
+    font-size: 35px;
     margin-left: 10px !important;
     
    
@@ -114,15 +246,101 @@
   }
 
 }
-@media screen and (max-width:48rem){
+@media only screen and (max-width:48rem){
   .maindiv{
     display: none;
     
   }
-  .logout #li{
-    font-size: 15px !important;
-    margin-left: -20px !important;
+  .logout{
+    margin-bottom: -20px !important;
   }
+  .dashboard{
+    margin-bottom: -20px !important;
+  }
+  .logout .icon{
+    font-size: 12px !important;
+  }
+  .logout #li{
+    font-size: 12px !important;
+    margin-left: -50px !important;
+    padding-left:20px !important;
+    padding-top: 10px !important;
+    padding-bottom: 15px !important;
+    padding-right: 25px !important;
+   
+  
+  }
+  .dashboard .li{
+    font-size: 12px !important;
+    padding-left: 10px !important;
+    padding-top: 12px !important;
+    padding-bottom: 15px !important;
+    margin-left: -10px !important;
+    width:160% !important;
+    
+  }
+  #remote .li{
+    font-size: 11px !important;
+    padding-left: 15px !important;
+    padding-top: 12px !important;
+    padding-bottom: 15px !important;
+    margin-left: -15px !important;
+    margin-right: 20px !important;
+    width:140% !important;
+
+  }
+  #conference .li{
+    font-size: 12px !important;
+    padding-left: 15px !important;
+    padding-top: 12px !important;
+    padding-bottom: 15px !important;
+    margin-left: -15px !important;
+   
+   width:120% !important;
+
+  }
+  #subscription .li{
+    font-size: 12px !important;
+    padding-left: 15px !important;
+    padding-top: 12px !important;
+    padding-bottom: 15px !important;
+    margin-left: -15px !important;
+   
+   width:120% !important;
+
+  }
+  #team .li{
+    font-size: 12px !important;
+    padding-left: 10px !important;
+    padding-top: 12px !important;
+    padding-bottom: 15px !important;
+    margin-left: -10px !important;
+   
+   width:70% !important;
+
+
+  }
+  #task .li{
+    font-size: 12px !important;
+    padding-left: 10px !important;
+    padding-top: 12px !important;
+    padding-bottom: 15px !important;
+    margin-left: -10px !important;
+   
+   width:70% !important;
+
+  }
+  #files .li{
+    font-size: 12px !important;
+    padding-left: 10px !important;
+    padding-top: 12px !important;
+    padding-bottom: 15px !important;
+    margin-left: -10px !important;
+   
+   width:65% !important;
+
+  }
+  
   .SideSubdiv{
     
     font-weight:bold;
@@ -139,10 +357,7 @@
     padding: 5px 150px 10px 159px !important;
     
   }
-  .li{
-    font-size: 28px !important;
-    
-  }
+ 
   .togglebutton{
     display: block;
     padding-top:10px;
@@ -152,7 +367,7 @@
     
   }
   .icon{
-    font-size: 20px;
+    font-size: 12px !important;
   }
   .subpages{
     float: left !important;
@@ -161,6 +376,7 @@
 
   
   }
+ 
   .head{
     display: block;
     overflow-x: hidden;
@@ -174,183 +390,11 @@
     display: none;
   
   }
-
-}
-@media (max-width: 47.938rem) {
-  .maindiv{
-    display: none;
-    
-  }
-  .SideSubdiv{
-    
-    font-weight:bold;
-     font-size:5vw !important;
-     
-      
-      
-  }
- 
-  .Hthirdeye{
-    background-color:white;
-  
-  }
-  .SideSubdiv .thirdeyeli{
-    padding: 5px 150px 10px 159px !important;
-    
-  }
-  .li{
-    font-size: 28px !important;
-    
-  }
-  .togglebutton{
-    display: block;
-    padding-top:10px;
-    padding-bottom: 15px;
-    padding-right: 20px;
-    
-    
-  }
-  .icon{
-    font-size: 20px;
-  }
-  .subpages{
-    float: left !important;
-    margin-left: 30px !important;
-    margin-top: 300px !important;
-
-  
-  }
-  .head{
-    display: block;
-    overflow-x: hidden;
-    font-weight: bold;
-    font-size: 35px;
-    
-   
-  }
-  .side-bar{
-    display: none;
-  
+  .mainSidediv{
+    margin-top: -20px !important;
   }
 
-
-}
-
-@media screen and (max-width:900px) and (min-width: 768px){
-  .maindiv{
-   display: none;
-
-  }
-  .subdiv{
-    display: none;
-  }
- .mainSidediv{
-  margin-top: 20px !important;
- 
-
-  }
-  .menu .li{
-    font-size: 20px !important;
-    width:300px !important;
-  }
-  .logout{
-    margin-top: 20px !important;
-    margin-bottom: 20px !important;
-    
-  }
-  .logout #li{
-    margin-top: 20px !important;
-    margin-bottom: 30px !important;
-    font-size: 25px !important;
-    margin-left: -20px !important;
-   
-
-  }
-  .logout .icon{
-    font-size: 30px !important ;
-
-  }
-  
-  .SideSubdiv{
-    
-    font-weight:700;
-     font-size:28px !important;
-     
-      color: black;
-      z-index: 50 !important;
-      margin-top: 20px !important;
-     
-     
-  }
-  .SideSubdiv .thirdeyeli{
-    padding: 5px 150px 10px 125px !important;
-    
-  }
-
-  .dashboard{
-    margin-top: -10px !important;
-  }
-  .dashboard .li{
-   
-    font-size: 20px !important;
-    width:300px !important;
-
-  }
-
-  .li{
-    font-size: 20px !important;
-    
-  }
-  .togglebutton{
-    display: block;
-    padding-top:10px;
-    padding-bottom: 15px;
-    padding-right: 20px;
-    
-    
-  }
-  .subpages{
-    float: left !important;
-    margin-left: 30px !important;
-    margin-top: 300px !important;
-
-  
-  }
-  .head{
-    display: block;
-    overflow-x: hidden;
-    font-weight: bold;
-    font-size: 38px;
-    
-   
-  }
-  .side-bar{
-    display: none;
-  
-  }
-  
-
-}
-
-
-@media screen  and (max-width:48rem){
-  .maindiv{
-    display: none;
- 
-   }
-   .subdiv{
-     display: none;
-   }
-  
-   .SideSubdiv{
-     display: none !important;
-     
-    
-   }
-   .mainSidediv{
-     margin-top: -20px !important;
-   }
-   .logout .li{
+  .logout .li{
     font-size: 15px !important;
     margin-top: -30px !important;
    margin-left: -20px !important;
@@ -441,8 +485,334 @@
 }
 
 
+}
+@media only screen and  (max-width: 47.938rem) and (min-width:500px){
+  .maindiv{
+    display: none;
+    
+  }
+  .SideSubdiv{
+    
+    font-weight:bold;
+     font-size:5vw !important;
+     
+      
+      
+  }
+  .logout{
+    margin-bottom: -20px !important;
+  }
+  .dashboard{
+    margin-bottom: -20px !important;
+  }
+  .logout .icon{
+    font-size: 12px !important;
+  }
+  .logout #li{
+    
+    font-size: 12px !important;
+    margin-left: -50px !important;
+    padding-left:20px !important;
+    padding-top: 10px !important;
+    padding-bottom: 15px !important;
+    padding-right: 25px !important;
+   
+  
+  }
+  .dashboard .li{
+    font-size: 12px !important;
+    padding-left: 10px !important;
+    padding-top: 12px !important;
+    padding-bottom: 15px !important;
+    margin-left: -10px !important;
+    width:90% !important;
+    
+  }
+  #remote .li{
+    font-size: 11px !important;
+    padding-left: 15px !important;
+    padding-top: 12px !important;
+    padding-bottom: 15px !important;
+    margin-left: -15px !important;
+    margin-right: 20px !important;
+    width:100% !important;
+
+  }
+  #conference .li{
+    font-size: 12px !important;
+    padding-left: 15px !important;
+    padding-top: 12px !important;
+    padding-bottom: 15px !important;
+    margin-left: -15px !important;
+   
+   width:60% !important;
+
+  }
+  #subscription .li{
+    font-size: 12px !important;
+    padding-left: 15px !important;
+    padding-top: 12px !important;
+    padding-bottom: 15px !important;
+    margin-left: -15px !important;
+   
+   width:60% !important;
+
+  }
+  #team .li{
+    font-size: 12px !important;
+    padding-left: 10px !important;
+    padding-top: 12px !important;
+    padding-bottom: 15px !important;
+    margin-left: -10px !important;
+   
+   width:40% !important;
+
+
+  }
+  #task .li{
+    font-size: 12px !important;
+    padding-left: 10px !important;
+    padding-top: 12px !important;
+    padding-bottom: 15px !important;
+    margin-left: -10px !important;
+   
+   width:40% !important;
+
+  }
+  #files .li{
+    font-size: 12px !important;
+    padding-left: 10px !important;
+    padding-top: 12px !important;
+    padding-bottom: 15px !important;
+    margin-left: -10px !important;
+   
+   width:35% !important;
+
+  }
+  
+ 
+  .Hthirdeye{
+    background-color:white;
+  
+  }
+  .SideSubdiv .thirdeyeli{
+    padding: 5px 150px 10px 159px !important;
+    
+  }
+  .li{
+    font-size: 28px !important;
+    
+  }
+  .togglebutton{
+    display: block;
+    padding-top:10px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    
+    
+  }
+  .icon{
+    font-size: 20px;
+  }
+  .subpages{
+    float: left !important;
+    margin-left: 30px !important;
+    margin-top: 300px !important;
+
+  
+  }
+  .head{
+    display: block;
+    overflow-x: hidden;
+    font-weight: bold;
+    font-size: 35px;
+    
+   
+  }
+  .side-bar{
+    display: none;
+  
+  }
+
 
 }
+
+@media screen and (max-width:900px) and (min-width: 768px){
+  .maindiv{
+   display: none;
+
+  }
+  .subdiv{
+    display: none;
+  }
+  .logout #li{
+    margin-top: 15px !important;
+    margin-bottom: 35px !important;
+    font-size: 25px !important;
+    margin-left: -40px !important;
+   
+   
+    
+  }
+  .dashboard .li{
+    
+    padding-left: 10px !important;
+    padding-top: 12px !important;
+    padding-bottom: 20px !important;
+    margin-right: 100px !important;
+    padding-right: -80px !important;
+ 
+    
+  }
+  #remote .li{
+    font-size: 20px !important;
+    padding-left: 15px !important;
+    padding-top: 12px !important;
+    padding-bottom: 20px !important;
+    margin-right: 90px !important;
+    padding-right: -50px !important;
+  
+    width:82% !important;
+
+  }
+  #conference .li{
+    font-size: 20px !important;
+    padding-left: 15px !important;
+    padding-top: 12px !important;
+    padding-bottom: 20px !important;
+    
+   
+   width:70% !important;
+
+  }
+  #subscription .li{
+    font-size: 20px !important;
+    padding-left: 10px !important;
+    padding-top: 12px !important;
+    padding-bottom: 20px !important;
+    
+   
+   width:65% !important;
+
+  }
+  #team .li{
+    font-size: 20px !important;
+    padding-left: 15px !important;
+    padding-top: 12px !important;
+    padding-bottom: 15px !important;
+    
+   
+   width:40% !important;
+
+
+  }
+  #task .li{
+    font-size: 20px !important;
+    padding-left: 15px !important;
+    padding-top: 12px !important;
+    padding-bottom: 15px !important;
+    
+   
+   width:40% !important;
+
+  }
+  #files .li{
+    font-size: 20px !important;
+    padding-left: 15px !important;
+    padding-top: 12px !important;
+    padding-bottom: 15px !important;
+    
+   
+   width:35% !important;
+
+  }
+ .mainSidediv{
+  margin-top: 15px !important;
+ 
+
+  }
+  .menu .li{
+    font-size: 20px !important;
+    width:300px !important;
+  }
+  .logout{
+    margin-top: 20px !important;
+    margin-bottom: 25px !important;
+    
+  }
+  
+  .logout .icon{
+    font-size: 30px !important ;
+
+  }
+  .icon{
+    font-size: 25px !important ;
+  }
+  .SideSubdiv{
+    
+    font-weight:700;
+     font-size:28px !important;
+     
+      color: black;
+      z-index: 50 !important;
+      margin-top: 20px !important;
+     
+     
+  }
+  .SideSubdiv .thirdeyeli{
+    padding: 5px 150px 10px 125px !important;
+    
+  }
+
+  .dashboard{
+    margin-top: 30px !important;
+    margin-bottom: -20px !important;
+  }
+  .dashboard .li{
+   
+    font-size: 20px !important;
+    width:200px !important;
+
+  }
+
+   #menu .li{
+    font-size: 20px !important;
+    
+    
+  }
+  .togglebutton{
+    display: block;
+    padding-top:10px;
+    padding-bottom: 15px;
+    padding-right: 20px;
+    
+    
+  }
+  .subpages{
+    float: left !important;
+    margin-left: 30px !important;
+    margin-top: 300px !important;
+
+  
+  }
+  .head{
+    display: block;
+    overflow-x: hidden;
+    font-weight: bold;
+    font-size: 38px;
+    
+   
+  }
+  .side-bar{
+    display: none;
+  
+  }
+  
+
+}
+
+
+
 
 
 

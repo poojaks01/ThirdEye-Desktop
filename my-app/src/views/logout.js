@@ -1,11 +1,22 @@
-import React from 'react'
-import '../App.css'
-function LogOut(){
-    return(
-        <div className="subpages" style={{width:'50%',  display:'float', float:'right'}}>
-            <h1 className="h1" >You Successfully LogOut</h1>
+import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
+
+export default class Logout extends Component {
+    constructor(props){
+        super()
+        localStorage.removeItem("token")
+    }
+    render() {
+        return (
+            <div>
+                <div className="container">
+                  <div className="subpages" >
+                      <h1 className="h1" >you have been logged out</h1>
+                       <Link to="/">Login Again</Link>
             
-        </div>
-    )
+                    </div>
+                </div>
+            </div>
+        )
+    }
 }
-export default LogOut

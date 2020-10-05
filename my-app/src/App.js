@@ -15,22 +15,30 @@ import Team from './views/Team'
 import Task from './views/Task'
 import Files from './views/Files'
 import LogOut from './views/logout'
+import Login from './views/Login'
 import Subscription from './views/Subscription'
 
 
 function App() {
   return (
     <div style={{position:'relative',  overflowX:'hidden', overflowY:'hidden'}}>
-    
+                
           
          <Router>
-       
+            
             <Header />
             <NavigationMenu  />
            
                <div style={{padding:"20px"}}>
-                  <Switch>
-                     <Route exact path="/">
+                   <Switch>
+                        <Route exact path="/">
+                           <Login />
+                       </Route>
+                    
+                    
+                  
+         
+                     <Route path="/dashboard">
                        <Dashboard />
                      </Route>
                      <Route path="/remote">
@@ -51,6 +59,7 @@ function App() {
                      <Route path="/subscription">
                         <Subscription />
                      </Route>
+                    
                      <Route path="/logout">
                         <LogOut />
                      </Route>

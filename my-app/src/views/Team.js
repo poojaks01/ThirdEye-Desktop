@@ -3,11 +3,11 @@ import '../App.css'
 function Team(){
   
     return(
-        <div className="subpages" style={{width:'50%',  display:'float', float:'right'}}>
+        <div className="container">
            
-           
-          <h1 className="h1">this is Team page</h1>
-
+           <div className="subpages">
+              <h1 className="h1">this is Team page</h1>
+            </div>
         </div>
     )
    

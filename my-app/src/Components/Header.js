@@ -7,7 +7,7 @@ import { faBell} from '@fortawesome/free-solid-svg-icons'
 //import Navigation from './Navigation'
 function Header(){
     return (
-        <header className="app-header">
+        <header className="wrapper">
            <span style={{position:'absolute', left:'0', fontSize:'4vw'}} className="head">
            
            ThirdEye

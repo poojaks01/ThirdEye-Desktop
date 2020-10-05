@@ -5,15 +5,15 @@ function Subscription(){
   
    
     return(
-        
-               <div className="subpages" style={{width:'50%',  display:'float', float:'right' }}>
+            <div className="container">
+               <div className="subpages" >
                    <h1 className="h1" style={{fontWeight:"bold"}}>
                       This is Subscription page
                    </h1>
 
             
                 </div>
-        
+            </div>
         
         
     )

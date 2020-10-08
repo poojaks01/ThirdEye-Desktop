@@ -1,10 +1,29 @@
-import React from 'react'
+import React, { Component } from 'react'
 import '../App.css'
+import { Redirect } from 'react-router-dom'
 
-function Subscription(){
+
+
+export default class Subscription extends Component {
+    constructor(props){
+        super()
+        const token = localStorage.getItem("token")
   
-   
-    return(
+        let loggedIn = true
+        if(token == null){
+            loggedIn = false
+        }
+        this.state = {
+            loggedIn
+        }
+    }
+    render() {
+        if(this.state.loggedIn === false){
+            return   <Redirect to ="/" /> 
+             
+            
+         }
+        return (
             <div className="container">
                <div className="subpages" >
                    <h1 className="h1" style={{fontWeight:"bold"}}>
@@ -16,6 +35,6 @@ function Subscription(){
             </div>
         
         
-    )
+        )
+    }
 }
-export default Subscription

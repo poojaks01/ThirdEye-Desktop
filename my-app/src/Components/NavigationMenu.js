@@ -23,7 +23,7 @@ function NavigationMenu(props){
                       <div style={{ fontSize:"15px", marginTop:'80px', marginBottom:'-10px', marginLeft:'10px', marginRight:'50px', borderRadius:'50px'}}>
                           <ul  style={{marginLeft:'20px', marginRight:'-20px'}}>
                               <li style={{listStyle:"none" } }>
-                                    <NavLink to="/dashboard" className="li" exact activeClassName="active" style={{color:"white", fontWeight:"500",position:'relative', left:"-40px", fontSize:"15px", padding:"15px" , display:"block", textDecoration:'none',  paddingBottom:'20px'}}
+                                    <NavLink exact to="/router" className="li" exact activeClassName="active" style={{color:"white", fontWeight:"500",position:'relative', left:"-40px", fontSize:"15px", padding:"15px" , display:"block", textDecoration:'none',  paddingBottom:'20px'}}
                                             onClick={props.closeMenu}
                                     >
                                         <FontAwesomeIcon style={{fontSize:'20px'}}

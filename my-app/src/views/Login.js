@@ -8,9 +8,10 @@ export default class Login extends Component {
     constructor(props){
         super();
         const token = localStorage.getItem("token")
-
+        
         let loggedIn = true
         if(token == null){
+        
             loggedIn = false
         }
        
@@ -18,6 +19,7 @@ export default class Login extends Component {
             username:"",
             password:"",
             loggedIn
+            
         }
         this.onChange = this.onChange.bind(this)
         this.submitForm = this.submitForm.bind(this)
@@ -37,6 +39,7 @@ export default class Login extends Component {
             localStorage.setItem("token", "abcdefghijklmnop")
             this.setState({
                 loggedIn: true
+                
             })
         } 
 
@@ -48,7 +51,9 @@ export default class Login extends Component {
             return <Redirect to="/admin" />
             
         }
-        return (
+        
+        return(
+        
            <div>
              
 

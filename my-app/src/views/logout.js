@@ -4,15 +4,15 @@ import { Link, Redirect } from 'react-router-dom'
 export default class LogOut extends Component {
     constructor(){
         super()
+       localStorage.removeItem("token")
         
-        localStorage.removeItem("token")
-        
+     
         
     } 
     
   
     render() {
-       
+     
         return (
             <div>
                 

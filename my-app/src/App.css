@@ -33,12 +33,28 @@
   border-radius:50px;
 
 }
+#hadder_thirdeye{
+  position:absolute;
+   left:0;
+    font-size:4vw;
+}
 
 
 .wrapper{
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  
+}
+.side-bar .li{
+  color:blue;
+   font-weight:500;
+    text-decoration:none;
+     margin-right:50px;
+     
+}
+#faIcon{
+  font-size:20px; 
 }
 
 
@@ -99,11 +115,141 @@
   margin-right: 350px;
   
 }
+.mainSidediv{
+margin-top:90px
+}
 
+.mainSidediv .logout{
+font-size:25px;
+ margin-left:10px;
+  margin-right:50px;
+}
+.logout #Logout{
+  margin-left:20px;
+   margin-right:-50px;
+}
+#Logout #li{
+  color:white;
+    text-decoration:none; 
+}
+.mainSidediv .dashboard{
+  font-size:15px;
+   margin-top:50px;
+    margin-bottom:-10px;
+     margin-left:10px;
+      margin-right:50px;
+       border-radius:50px;
+}
+.dashboard #Dashboard_ul{
+  margin-left:20px;
+   margin-right:-20px;
+}
+.dashboard .li{
+  color:white;
+   font-weight:500;
+   position:relative;
+    left:-40px;
+     font-size:15px ;
+      display:block;
+       text-decoration:none;
+}
+.menu{
+  margin-left:30px;
+   margin-top:20px;
+}
+.menu li{
+  list-style: none;
+}
+.menu .li{
 
+}
+.menu #remote .li{
+  color:white;
+   font-weight:500;
+   position:relative;
+    left:-40px;
+     font-size:15px;
+      display:block;
+       text-decoration:none;
+        padding-bottom:20px;
+}
+.menu #conference .li{
+  color:white;
+   font-weight:500;
+   position:relative;
+    left:-40px;
+     font-size:20px;
+      padding:10px;
+       display:block;
+        text-decoration:none;
+         padding-bottom:20px;
+}
+.menu #team .li{
+  color:white;
+   font-weight:500;
+   position:relative;
+    left:-40px;
+     font-size:15px;
+      padding:10px;
+       display:block;
+        text-decoration:none;
+          padding-bottom:20px;
+}
+.menu #task .li{
+  color:white;
+  font-weight:500;
+  position:relative;
+   left:-40px;
+    font-size:15px;
+     padding:10px;
+      display:block;
+       text-decoration:none;
+         padding-bottom:20px;
+}
+.menu #files .li{
+  color:white;
+  font-weight:500;
+  position:relative;
+   left:-40px;
+    font-size:15px;
+     padding:10px;
+      display:block;
+       text-decoration:none;
+         padding-bottom:20px;
+}
+.menu #subscription .li{
+  color:white;
+  font-weight:500;
+  position:relative;
+   left:-40px;
+    font-size:15px;
+     padding:10px;
+      display:block;
+       text-decoration:none;
+         padding-bottom:20px;
+}
+.Transition_Menu{
+  position:fixed;
+   background:#ff4040;
+    top:88px;
+     right:0;
+      width:50%;
+       height:100%;
+        z-index:50;
+         box-shadow:2px 2px lightgrey;
+          padding:5px;
+}
 
-
-
+.tansition_Mask{
+   position:fixed;
+    top:0;
+     right:0;
+      width:50%;
+       height:100%;
+}
+.Toggle_class{
+  font-size:35px;
+}
 
 
 @media only screen and (max-width:64rem){
@@ -223,7 +369,7 @@
   background-color: #111;
   overflow-x: hidden;*/
    
-    margin-top: 40px !important;
+    margin-top: 50px !important;
   
   }
  
